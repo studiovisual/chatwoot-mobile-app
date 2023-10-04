@@ -20,7 +20,7 @@ import i18n from '../../i18n';
 import LoaderButton from '../../components/LoaderButton';
 import { ScrollView } from 'react-native-gesture-handler';
 
-import { SIGNUP_URL } from '../../constants/url';
+import { HELP_URL } from 'constants/url.js';
 import { openURL } from '../../helpers/UrlHelper';
 import { EMAIL_REGEX } from '../../helpers/formHelper';
 import { actions as authActions, resetAuth, selectLoggedIn } from 'reducer/authSlice';
@@ -73,7 +73,7 @@ const LoginScreenComponent = ({ navigation }) => {
   }, [installationUrl, navigation, dispatch]);
 
   const doSignup = () => {
-    openURL({ URL: `${installationUrl}${SIGNUP_URL}` });
+    openURL({ URL: HELP_URL });
   };
 
   const { navigate } = navigation;
