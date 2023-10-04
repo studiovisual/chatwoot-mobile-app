@@ -28,14 +28,8 @@ const preferencesSections = [
 
 const supportSection = [
   {
-    leftIcon: 'book-open-globe-outline',
-    title: 'Read Docs',
-    rightIcon: 'open-outline',
-    routeName: 'ReadDocs',
-  },
-  {
     leftIcon: 'chat-help-outline',
-    title: 'Chat with Us',
+    title: 'Fale Conosco',
     rightIcon: 'open-screen-outline',
     routeName: 'ChatWithUs',
   },
