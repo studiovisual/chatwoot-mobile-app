@@ -183,7 +183,7 @@
     "OfFLINE": "You must connect to Wi-fi or a cellular network to get online again",
     "CANNOT_FETCH": "There was an error fetching the information, please try again",
     "AUTH": "Неправильне ім'я користувача / пароль. Будь ласка, спробуйте ще раз",
-    "NO_ACCOUNTS_MESSAGE": "You don't have access to any chatwoot accounts"
+    "NO_ACCOUNTS_MESSAGE": "You don't have access to any wisewoot accounts"
   },
   "SUCCESS": {
     "AUTH": "Login Successful"

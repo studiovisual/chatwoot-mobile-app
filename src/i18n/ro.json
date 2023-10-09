@@ -183,7 +183,7 @@
     "OfFLINE": "Trebuie să vă conectați la Wi-Fi sau la o rețea celulară pentru a intra din nou online",
     "CANNOT_FETCH": "A existat o eroare la preluarea informațiilor, vă rugăm să încercați din nou",
     "AUTH": "Nume utilizator / parolă incorectă. Vă rugăm să încercaţi din nou",
-    "NO_ACCOUNTS_MESSAGE": "Nu aveți acces la niciun cont de chatwoot"
+    "NO_ACCOUNTS_MESSAGE": "Nu aveți acces la niciun cont de wisewoot"
   },
   "SUCCESS": {
     "AUTH": "Autentificare reușită"

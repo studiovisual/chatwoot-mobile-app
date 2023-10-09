@@ -183,7 +183,7 @@
     "OfFLINE": "Tekrar çevrimiçi olmak için kablosuz ağa veya hücresel ağa bağlanmanız gerekir",
     "CANNOT_FETCH": "Bilgi alınırken bir hata oluştu, lütfen tekrar deneyin",
     "AUTH": "Kullanıcı Adı / Parola Yanlış. Lütfen tekrar deneyin",
-    "NO_ACCOUNTS_MESSAGE": "Herhangi bir chatwoot hesabına erişiminiz yok"
+    "NO_ACCOUNTS_MESSAGE": "Herhangi bir wisewoot hesabına erişiminiz yok"
   },
   "SUCCESS": {
     "AUTH": "Giriş başarılı"

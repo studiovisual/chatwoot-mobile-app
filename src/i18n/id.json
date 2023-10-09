@@ -160,7 +160,7 @@
     "OFFLINE": "Anda harus terhubung ke Wi-fi atau jaringan seluler untuk online kembali",
     "CANNOT_FETCH": "Ada kesalahan saat mengambil informasi, silakan coba lagi",
     "AUTH": "Nama pengguna / kata sandi salah. Silakan coba lagi",
-    "NO_ACCOUNTS_MESSAGE": "Anda tidak memiliki akses ke akun chatwoot apa pun"
+    "NO_ACCOUNTS_MESSAGE": "Anda tidak memiliki akses ke akun wisewoot apa pun"
   },
   "SUCCESS": {
     "AUTH": "Login Berhasil"

@@ -183,7 +183,7 @@
     "OfFLINE": "Devi connetterti al Wi-Fi o a una rete cellulare per tornare online",
     "CANNOT_FETCH": "Si è verificato un errore nel recupero delle informazioni, si prega di riprovare",
     "AUTH": "Nome utente / Password non corretta. Si prega di riprovare",
-    "NO_ACCOUNTS_MESSAGE": "Non hai accesso ad alcun account chatwoot"
+    "NO_ACCOUNTS_MESSAGE": "Non hai accesso ad alcun account wisewoot"
   },
   "SUCCESS": {
     "AUTH": "Accesso eseguito correttamente"
