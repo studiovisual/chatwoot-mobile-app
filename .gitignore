@@ -84,3 +84,4 @@ ios/sentry.properties
 android/sentry.properties
 
 GoogleService-Info.plist
+ios/Podfile.lock
