@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Chatwoot = () => {
+const WiseWoot = () => {
   useEffect(() => {
     ErrorHelper.init();
   }, []);
@@ -57,4 +57,4 @@ const Chatwoot = () => {
   );
 };
 
-export default !__DEV__ ? Sentry.wrap(Chatwoot) : Chatwoot;
+export default !__DEV__ ? Sentry.wrap(WiseWoot) : WiseWoot;

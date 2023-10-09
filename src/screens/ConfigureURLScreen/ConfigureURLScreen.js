@@ -52,7 +52,7 @@ const ConfigureURLScreenComponent = ({ navigation }) => {
     formState: { errors },
   } = useForm({
     defaultValues: {
-      url: baseUrl ? baseUrl : appName === 'Chatwoot' ? 'app.wisewoot.com' : '',
+      url: baseUrl ? baseUrl : appName === 'WiseWoot' ? 'app.wisewoot.com' : '',
     },
   });
 

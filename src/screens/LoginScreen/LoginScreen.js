@@ -208,7 +208,7 @@ const LoginScreenComponent = ({ navigation }) => {
 
           <View style={styles.linksContainer}>
             <View style={styles.accountView}>
-              {appName === 'Chatwoot' && (
+              {appName === 'WiseWoot' && (
                 <>
                   <TouchableOpacity onPress={doSignup}>
                     <Text xs medium color={colors.textLight}>
