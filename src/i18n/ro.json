@@ -14,7 +14,7 @@
   },
   "CONFIGURE_URL": {
     "ENTER_URL": "Instalare URL",
-    "DESCRIPTION": "Dacă folosiți o instalare de Chatwoot auto-găzduită, introduceți URL-ul serverului. Altfel, folosiți app.wisewoot.com.",
+    "DESCRIPTION": "Dacă folosiți o instalare de WiseWoot auto-găzduită, introduceți URL-ul serverului. Altfel, folosiți app.wisewoot.com.",
     "URL_ERROR": "Introduceți o adresă URL validă",
     "URL_REQUIRED": "URL-ul este necesar",
     "CONNECT": "Conectează-te",
@@ -190,8 +190,8 @@
   },
   "SERVER_UPGRADE": {
     "TITLE": "Este necesar upgrade-ul serverului",
-    "WARNING_FOR_AGENT": "Se pare că utilizați serverul Chatwoot neacceptat pentru aplicația mobilă. Vă rugăm să contactați administratorul pentru a vă actualiza serverul Chatwoot.",
-    "WARNING_FOR_ADMIN": "Se pare că utilizați serverul Chatwoot neacceptat pentru aplicația mobilă. Este necesar upgrade-ul la versiunea de server %{minimumVersion} sau o versiune ulterioară."
+    "WARNING_FOR_AGENT": "Se pare că utilizați serverul WiseWoot neacceptat pentru aplicația mobilă. Vă rugăm să contactați administratorul pentru a vă actualiza serverul WiseWoot.",
+    "WARNING_FOR_ADMIN": "Se pare că utilizați serverul WiseWoot neacceptat pentru aplicația mobilă. Este necesar upgrade-ul la versiunea de server %{minimumVersion} sau o versiune ulterioară."
   },
   "EXIT": {
     "TITLE": "Ieșire",
@@ -210,5 +210,8 @@
       "HREF_TEXT": "Restricţie fereastră mesaj 24 de ore",
       "HREF_LINK": "https://developers.facebook.com/docs/messenger-platform/policy/policy-overview/"
     }
+  },
+  "CHAT_WITH_US": {
+    "TITLE": "Chat With Us"
   }
 }

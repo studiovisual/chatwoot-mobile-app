@@ -14,7 +14,7 @@
   },
   "CONFIGURE_URL": {
     "ENTER_URL": "URL de instalación",
-    "DESCRIPTION": "Si estás usando una instalación de Chatwoot autoalojada, introduce la URL de tu servidor. De lo contrario, usa app.wisewoot.com.",
+    "DESCRIPTION": "Si estás usando una instalación de WiseWoot autoalojada, introduce la URL de tu servidor. De lo contrario, usa app.wisewoot.com.",
     "URL_ERROR": "Introduzca una URL válida",
     "URL_REQUIRED": "La URL es requerida",
     "CONNECT": "Conectar",
@@ -190,8 +190,8 @@
   },
   "SERVER_UPGRADE": {
     "TITLE": "Actualización de servidor necesaria",
-    "WARNING_FOR_AGENT": "Parece que estás usando un servidor de Chatwoot no soportado para tu aplicación móvil. Por favor, contacta con tu administrador para actualizar tu servidor de Chatwoot.",
-    "WARNING_FOR_ADMIN": "Parece que estás usando un servidor de Chatwoot no compatible para tu aplicación móvil. Se requiere actualizar a la versión del servidor %{minimumVersion} o posterior."
+    "WARNING_FOR_AGENT": "Parece que estás usando un servidor de WiseWoot no soportado para tu aplicación móvil. Por favor, contacta con tu administrador para actualizar tu servidor de WiseWoot.",
+    "WARNING_FOR_ADMIN": "Parece que estás usando un servidor de WiseWoot no compatible para tu aplicación móvil. Se requiere actualizar a la versión del servidor %{minimumVersion} o posterior."
   },
   "EXIT": {
     "TITLE": "Salir",
@@ -210,5 +210,8 @@
       "HREF_TEXT": "Restricción de la ventana de mensajes de 24 horas",
       "HREF_LINK": "https://developers.facebook.com/docs/messenger-platform/policy/policy-overview/"
     }
+  },
+  "CHAT_WITH_US": {
+    "TITLE": "Chat With Us"
   }
 }

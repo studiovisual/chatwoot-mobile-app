@@ -14,7 +14,7 @@
   },
   "CONFIGURE_URL": {
     "ENTER_URL": "Installation URL",
-    "DESCRIPTION": "If you are using a self-hosted Chatwoot installation, input your server URL. Otherwise, use app.wisewoot.com.",
+    "DESCRIPTION": "If you are using a self-hosted WiseWoot installation, input your server URL. Otherwise, use app.wisewoot.com.",
     "URL_ERROR": "Enter a valid URL",
     "URL_REQUIRED": "URL is required",
     "CONNECT": "Σύνδεση",
@@ -190,8 +190,8 @@
   },
   "SERVER_UPGRADE": {
     "TITLE": "Server upgrade required",
-    "WARNING_FOR_AGENT": "It seems like you are using unsupported Chatwoot server for your mobile app. Please contact your admin to upgrade your Chatwoot server.",
-    "WARNING_FOR_ADMIN": "It seems like you are using unsupported Chatwoot server for your mobile app. Upgrading to server version %{minimumVersion} or later is required."
+    "WARNING_FOR_AGENT": "It seems like you are using unsupported WiseWoot server for your mobile app. Please contact your admin to upgrade your WiseWoot server.",
+    "WARNING_FOR_ADMIN": "It seems like you are using unsupported WiseWoot server for your mobile app. Upgrading to server version %{minimumVersion} or later is required."
   },
   "EXIT": {
     "TITLE": "Exit",
@@ -210,5 +210,8 @@
       "HREF_TEXT": "του περιορισμού των 24 ωρών",
       "HREF_LINK": "https://developers.facebook.com/docs/messenger-platform/policy/policy-overview/"
     }
+  },
+  "CHAT_WITH_US": {
+    "TITLE": "Chat With Us"
   }
 }

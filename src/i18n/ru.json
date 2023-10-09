@@ -14,7 +14,7 @@
   },
   "CONFIGURE_URL": {
     "ENTER_URL": "URL установки",
-    "DESCRIPTION": "Если вы используете установку Chatwoot, введите URL вашего сервера. В противном случае используйте app.wisewoot.com.",
+    "DESCRIPTION": "Если вы используете установку WiseWoot, введите URL вашего сервера. В противном случае используйте app.wisewoot.com.",
     "URL_ERROR": "Введите правильный URL",
     "URL_REQUIRED": "Необходимо указать URL",
     "CONNECT": "Подключиться",
@@ -190,8 +190,8 @@
   },
   "SERVER_UPGRADE": {
     "TITLE": "Требуется обновить сервер",
-    "WARNING_FOR_AGENT": "Похоже, вы используете неподдерживаемый сервер Chatwoot для своего мобильного приложения. Обратитесь к администратору, чтобы обновить сервер Chatwoot.",
-    "WARNING_FOR_ADMIN": "Похоже, вы используете неподдерживаемый сервер Chatwoot для своего мобильного приложения. Требуется обновление до версии сервера %{minimumVersion} или новее."
+    "WARNING_FOR_AGENT": "Похоже, вы используете неподдерживаемый сервер WiseWoot для своего мобильного приложения. Обратитесь к администратору, чтобы обновить сервер WiseWoot.",
+    "WARNING_FOR_ADMIN": "Похоже, вы используете неподдерживаемый сервер WiseWoot для своего мобильного приложения. Требуется обновление до версии сервера %{minimumVersion} или новее."
   },
   "EXIT": {
     "TITLE": "Выйти",
@@ -210,5 +210,8 @@
       "HREF_TEXT": "Ограничение на 24 часа",
       "HREF_LINK": "https://developers.facebook.com/docs/messenger-platform/policy/policy-overview/"
     }
+  },
+  "CHAT_WITH_US": {
+    "TITLE": "Chat With Us"
   }
 }

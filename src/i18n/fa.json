@@ -190,8 +190,8 @@
   },
   "SERVER_UPGRADE": {
     "TITLE": "سرور باید بروزرسانی شود",
-    "WARNING_FOR_AGENT": "به نظر می رسد که از سرور پشتیبانی نشده Chatwoot برای برنامه تلفن همراه خود استفاده می کنید. لطفاً برای ارتقاء سرور Chatwoot با مدیر سرور خود تماس بگیرید.",
-    "WARNING_FOR_ADMIN": "به نظر می رسد که از سرور پشتیبانی نشده Chatwoot برای برنامه تلفن همراه خود استفاده می کنید. ارتقاء به نسخه سرور %{minimumVersion} یا بالاتر مورد نیاز است."
+    "WARNING_FOR_AGENT": "به نظر می رسد که از سرور پشتیبانی نشده WiseWoot برای برنامه تلفن همراه خود استفاده می کنید. لطفاً برای ارتقاء سرور WiseWoot با مدیر سرور خود تماس بگیرید.",
+    "WARNING_FOR_ADMIN": "به نظر می رسد که از سرور پشتیبانی نشده WiseWoot برای برنامه تلفن همراه خود استفاده می کنید. ارتقاء به نسخه سرور %{minimumVersion} یا بالاتر مورد نیاز است."
   },
   "EXIT": {
     "TITLE": "خروج",
@@ -210,5 +210,8 @@
       "HREF_TEXT": "محدودیت ۲۴ ساعته پنجره پیام",
       "HREF_LINK": "https://developers.facebook.com/docs/messenger-platform/policy/policy-overview/"
     }
+  },
+  "CHAT_WITH_US": {
+    "TITLE": "Chat With Us"
   }
 }
