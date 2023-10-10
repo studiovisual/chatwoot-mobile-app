@@ -183,7 +183,7 @@
     "OfFLINE": "Du måste ansluta till Wi-Fi eller ett mobilnätverk för att gå online igen",
     "CANNOT_FETCH": "Det uppstod ett fel när informationen skulle hämtas, försök igen",
     "AUTH": "Användarnamn / Lösenord felaktigt. Försök igen",
-    "NO_ACCOUNTS_MESSAGE": "Du har inte tillgång till några chatwoot-konton"
+    "NO_ACCOUNTS_MESSAGE": "Du har inte tillgång till några wisewoot-konton"
   },
   "SUCCESS": {
     "AUTH": "Inloggning lyckades"
