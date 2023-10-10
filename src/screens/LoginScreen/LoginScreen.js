@@ -1,14 +1,9 @@
-import React, { useMemo, useEffect, useRef, useCallback } from 'react';
+import React, { useMemo, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useTheme } from '@react-navigation/native';
-import { View, Image, TouchableOpacity, SafeAreaView, Dimensions } from 'react-native';
+import { View, Image, TouchableOpacity, SafeAreaView } from 'react-native';
 import PropTypes from 'prop-types';
 import { useForm, Controller } from 'react-hook-form';
-import BottomSheetModal from 'components/BottomSheet/BottomSheet';
-import LanguageSelector from '../Settings/components/LanguageSelector';
-import { StackActions } from '@react-navigation/native';
-import AnalyticsHelper from 'helpers/AnalyticsHelper';
-import { ACCOUNT_EVENTS } from 'constants/analyticsEvents';
 import { Text } from 'components';
 
 import DeviceInfo from 'react-native-device-info';
@@ -23,16 +18,9 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { HELP_URL } from 'constants/url.js';
 import { openURL } from '../../helpers/UrlHelper';
 import { EMAIL_REGEX } from '../../helpers/formHelper';
-import { actions as authActions, resetAuth, selectLoggedIn } from 'reducer/authSlice';
+import { actions as authActions, resetAuth } from 'reducer/authSlice';
 
-import {
-  selectInstallationUrl,
-  selectBaseUrl,
-  selectLocale,
-  setLocale,
-} from 'reducer/settingsSlice';
-
-const deviceHeight = Dimensions.get('window').height;
+import { selectInstallationUrl, selectBaseUrl } from 'reducer/settingsSlice';
 
 const appName = DeviceInfo.getApplicationName();
 
@@ -59,11 +47,9 @@ const LoginScreenComponent = ({ navigation }) => {
 
   const dispatch = useDispatch();
   const { isLoggingIn } = useSelector(state => state.auth);
-  const isLoggedIn = useSelector(selectLoggedIn);
 
   const installationUrl = useSelector(selectInstallationUrl);
   const baseUrl = useSelector(selectBaseUrl);
-  const activeLocale = useSelector(selectLocale);
 
   useEffect(() => {
     dispatch(resetAuth());
@@ -92,33 +78,6 @@ const LoginScreenComponent = ({ navigation }) => {
     const { email, password } = data;
     dispatch(authActions.doLogin({ email, password }));
   };
-
-  const changeLanguageModal = useRef(null);
-  const changeLanguageModalModalSnapPoints = useMemo(
-    () => [deviceHeight - 210, deviceHeight - 210],
-    [],
-  );
-  const toggleChangeLanguageModal = useCallback(() => {
-    changeLanguageModal.current.present() || changeLanguageModal.current?.dismiss();
-  }, []);
-  const closeChangeLanguageModal = useCallback(() => {
-    changeLanguageModal.current?.dismiss();
-  }, []);
-  const onChangeLanguage = useCallback(
-    locale => {
-      dispatch(setLocale(locale));
-      AnalyticsHelper.track(ACCOUNT_EVENTS.CHANGE_LANGUAGE, {
-        language: activeLocale,
-      });
-      if (isLoggedIn) {
-        navigation.dispatch(StackActions.replace('Tab'));
-      } else {
-        navigation.dispatch(StackActions.replace('Login'));
-      }
-      closeChangeLanguageModal();
-    },
-    [closeChangeLanguageModal, dispatch, activeLocale, isLoggedIn, navigation],
-  );
 
   return (
     <SafeAreaView style={styles.keyboardView}>
@@ -225,27 +184,6 @@ const LoginScreenComponent = ({ navigation }) => {
                 </Text>
               </TouchableOpacity>
             </View>
-            <View style={styles.accountView}>
-              <TouchableOpacity onPress={toggleChangeLanguageModal}>
-                <Text xs medium color={colors.textLight}>
-                  {i18n.t('LOGIN.CHANGE_LANGUAGE')}
-                </Text>
-              </TouchableOpacity>
-            </View>
-            <BottomSheetModal
-              bottomSheetModalRef={changeLanguageModal}
-              initialSnapPoints={changeLanguageModalModalSnapPoints}
-              showHeader
-              headerTitle={i18n.t('LOGIN.CHANGE_LANGUAGE')}
-              closeFilter={closeChangeLanguageModal}
-              children={
-                <LanguageSelector
-                  activeValue={activeLocale}
-                  colors={colors}
-                  onPress={onChangeLanguage}
-                />
-              }
-            />
           </View>
         </View>
       </ScrollView>

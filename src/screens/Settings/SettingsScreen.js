@@ -32,7 +32,7 @@ import {
   selectCurrentUserAvailability,
 } from 'reducer/authSlice';
 import { clearAllConversations } from 'reducer/conversationSlice';
-import { selectLocale, setLocale } from 'reducer/settingsSlice';
+import { selectLocale } from 'reducer/settingsSlice';
 
 import UserInformation from './components/UserInformation';
 import AvailabilityStatus from './components/AvailabilityStatus';
@@ -42,7 +42,6 @@ import { Header, Text, Pressable, Icon } from 'components';
 // Bottom sheet
 import AccountsSelector from './components/AccountsSelector';
 import NotificationPreferenceSelector from './components/NotificationPreferenceSelector';
-import LanguageSelector from './components/LanguageSelector';
 
 const deviceHeight = Dimensions.get('window').height;
 
@@ -133,15 +132,8 @@ const SettingsScreen = () => {
 
   // Language bottom sheet
   const changeLanguageModal = useRef(null);
-  const changeLanguageModalModalSnapPoints = useMemo(
-    () => [deviceHeight - 210, deviceHeight - 210],
-    [],
-  );
   const toggleChangeLanguageModal = useCallback(() => {
     changeLanguageModal.current.present() || changeLanguageModal.current?.dismiss();
-  }, []);
-  const closeChangeLanguageModal = useCallback(() => {
-    changeLanguageModal.current?.dismiss();
   }, []);
 
   const onChangeAccount = useCallback(
@@ -152,15 +144,6 @@ const SettingsScreen = () => {
       closeSwitchAccountModal();
     },
     [dispatch, navigation, closeSwitchAccountModal],
-  );
-
-  const onChangeLanguage = useCallback(
-    locale => {
-      dispatch(setLocale(locale));
-      navigation.dispatch(StackActions.replace('Tab'));
-      closeChangeLanguageModal();
-    },
-    [closeChangeLanguageModal, navigation, dispatch],
   );
 
   const activeValue = item => {
@@ -248,20 +231,6 @@ const SettingsScreen = () => {
             headerTitle={i18n.t('SETTINGS.NOTIFICATION_PREFERENCES')}
             closeFilter={closeNotificationPreferencesModal}
             children={<NotificationPreferenceSelector colors={colors} />}
-          />
-          <BottomSheetModal
-            bottomSheetModalRef={changeLanguageModal}
-            initialSnapPoints={changeLanguageModalModalSnapPoints}
-            showHeader
-            headerTitle={i18n.t('SETTINGS.CHANGE_LANGUAGE')}
-            closeFilter={closeChangeLanguageModal}
-            children={
-              <LanguageSelector
-                activeValue={activeLocale}
-                colors={colors}
-                onPress={onChangeLanguage}
-              />
-            }
           />
         </View>
         <View style={styles.separatorView}>
