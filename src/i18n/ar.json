@@ -14,7 +14,7 @@
   },
   "CONFIGURE_URL": {
     "ENTER_URL": "رابط التثبيت",
-    "DESCRIPTION": "If you are using a self-hosted Chatwoot installation, input your server URL. Otherwise, use app.chatwoot.com.",
+    "DESCRIPTION": "If you are using a self-hosted WiseWoot installation, input your server URL. Otherwise, use app.wisewoot.com.",
     "URL_ERROR": "الرجاء إدخال عنوان صحيح",
     "URL_REQUIRED": "URL is required",
     "CONNECT": "اتصل",
@@ -179,19 +179,19 @@
     "CHANGE_TEAMS": "تم تغيير فريق المحادثة"
   },
   "ERRORS": {
-    "COMMON_ERROR": "تعذر الاتصال بخادم Chatwoot، الرجاء المحاولة مرة أخرى لاحقاً",
+    "COMMON_ERROR": "تعذر الاتصال بخادم WiseWoot، الرجاء المحاولة مرة أخرى لاحقاً",
     "OfFLINE": "يجب عليك التوصيل بشبكة Wi-Fi، أو بشبكة البيانات للاتصال مجدداً",
     "CANNOT_FETCH": "حدث خطأ أثناء جلب المعلومات، الرجاء المحاولة مرة أخرى",
     "AUTH": "اسم المستخدم / كلمة المرور غير صحيحة. الرجاء المحاولة مرة أخرى",
-    "NO_ACCOUNTS_MESSAGE": "ليس لديك حق الوصول إلى أي حسابات في Chatwoot"
+    "NO_ACCOUNTS_MESSAGE": "ليس لديك حق الوصول إلى أي حسابات في WiseWoot"
   },
   "SUCCESS": {
     "AUTH": "تم تسجيل الدخول بنجاح"
   },
   "SERVER_UPGRADE": {
     "TITLE": "Server upgrade required",
-    "WARNING_FOR_AGENT": "It seems like you are using unsupported Chatwoot server for your mobile app. Please contact your admin to upgrade your Chatwoot server.",
-    "WARNING_FOR_ADMIN": "It seems like you are using unsupported Chatwoot server for your mobile app. Upgrading to server version %{minimumVersion} or later is required."
+    "WARNING_FOR_AGENT": "It seems like you are using unsupported WiseWoot server for your mobile app. Please contact your admin to upgrade your WiseWoot server.",
+    "WARNING_FOR_ADMIN": "It seems like you are using unsupported WiseWoot server for your mobile app. Upgrading to server version %{minimumVersion} or later is required."
   },
   "EXIT": {
     "TITLE": "خروج",
@@ -210,5 +210,8 @@
       "HREF_TEXT": "قيد نافذة الـ 24 ساعة",
       "HREF_LINK": "https://developers.facebook.com/docs/messenger-platform/policy/policy-overview/"
     }
+  },
+  "CHAT_WITH_US": {
+    "TITLE": "Chat With Us"
   }
 }

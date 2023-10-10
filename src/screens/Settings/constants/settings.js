@@ -29,7 +29,7 @@ const preferencesSections = [
 const supportSection = [
   {
     leftIcon: 'chat-help-outline',
-    title: 'Fale Conosco',
+    title: 'Chat with Us',
     rightIcon: 'open-screen-outline',
     routeName: 'ChatWithUs',
   },

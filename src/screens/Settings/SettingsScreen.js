@@ -275,7 +275,7 @@ const SettingsScreen = () => {
               <AccordionItem
                 key={item.title}
                 leftIcon={item.leftIcon}
-                title={item.title}
+                title={i18n.t('CHAT_WITH_US.TITLE')}
                 rightIcon={item.rightIcon}
                 routeName={item.routeName}
                 onPress={() => {
