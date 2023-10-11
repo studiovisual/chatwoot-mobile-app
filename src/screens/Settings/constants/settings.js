@@ -5,18 +5,11 @@ const preferencesSections = [
     rightIcon: 'arrow-chevron-right-outline',
     routeName: 'SwitchAccount',
   },
-
   {
     leftIcon: 'bell-outline',
     title: 'Notification Preferences',
     rightIcon: 'arrow-chevron-right-outline',
     routeName: 'NotificationPreferences',
-  },
-  {
-    leftIcon: 'globe-outline',
-    title: 'Change Language',
-    rightIcon: 'arrow-chevron-right-outline',
-    routeName: 'ChangeLanguage',
   },
   // {
   //   leftIcon: 'color-palette-outline',
