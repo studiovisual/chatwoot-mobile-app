@@ -63,7 +63,7 @@ export const actions = {
         const response = await APIHelper.post('auth/password', { email });
         let successMessage = I18n.t('FORGOT_PASSWORD.API_SUCCESS');
         if (response.data && response.data.message) {
-          successMessage = response.data.message;
+          successMessage = I18n.t('FORGOT_PASSWORD.API_SUCCESS');
         }
         showToast({ message: successMessage, type: 'success' });
         const { data } = response;
